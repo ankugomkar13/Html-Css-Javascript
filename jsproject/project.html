@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <script src="./project.js"></script>
+    <!-- sidebar -->
+    <div id="sidebar" class="sidebar">
+        <p onclick="handleCloseSidebar()">close</p>
+        <h1>Hello User</h1>
+
+        <div class="sidebarHeading">
+            <h3>Trending</h3>
+            <p>Best Sellers</p>
+            <p>New Releases</p>
+            <p> Movers & Shakers</p>
+        </div>
+
+        <div class="sidebarHeading">
+            <h3>Digital Content And Devices</h3>
+            <div class="SidebarOption">
+                <p>Echo & Alexa</p>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+            <div class="SidebarOption">
+                <p>Fire Tv</p>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+            <div class="SidebarOption">
+                <p> Kindle E-Readers & eBools</p>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+            <div class="SidebarOption">
+                <p>Audible Audibooks</p>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+            <div class="SidebarOption">
+                <p>Aamazon PrimeVedio</p>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- header -->
+    <div class="header">
+        <img src="./image/PngItem_12080.png">
+        <div>
+            <div class="headerData">
+                <i style="color: white; margin-right: 7px;" class="fa fa-map-marker" aria-hidden="true"></i>
+                <div class="headerText">
+                    <p>Hello</p>
+                    <h3>Select Your adrress</h3>
+                </div>
+            </div>
+        </div>
+        <input type="text" placeholder="Sreach Amazon.in">
+        <div class="headerData">
+            <div class="headerText">
+                <p>Hello,Sign In</p>
+                <h3>Acoount & Lists</h3>
+            </div>
+            <i style="color: white; margin-left: 7px;" class="fa fa-sort-desc" aria-hidden="true"></i>
+        </div>
+        <div class="headerText headerReturn">
+            <p>Returns</p>
+            <h3>&Oders</h3>
+        </div>
+        <i style="color: white; font-size: 30px;" class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </div>
+    <!-- navbar -->
+    <nav>
+        <p onclick="handleOpenSidebar()">
+            <i style="color: white;" class="fa fa-bars" aria-hidden="true">All</i>
+        </p>
+        <p>AmazonminiTV</p>
+        <p>sell</p>
+        <p>AmazonPay</p>
+        <p>Gift Cards</p>
+        <p>Buy Again</p>
+        <p>Prime</p>
+        <p>Health</p>
+        <p>Household</p>
+        <p>pesonal care</p>
+    </nav>
+
+    <!-- products -->
+    <div class = "product" id = "product">
+        <div class = "oneproduct">
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+}
+
+.headerData {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.headerData:hover {
+    cursor: pointer;
+    border-color: white;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+}
+
+.header>img:hover {
+    border-color: white;
+    cursor: pointer;
+}
+
+.header>img {
+    border: 1px solid black;
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2px;
+
+}
+
+.headerText>p {
+    color: rgb(196, 194, 194);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.headerText>h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.headerReturn {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.headerReturn:hover {
+    cursor: pointer;
+    border-color: white;
+}
+
+.header>input {
+    height: 30px;
+    font-size: 18px;
+    padding-left: 20px;
+    width: 38%;
+}
+/* navbar */
+nav {
+    background-color: #011c22;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav>p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #011c22;
+    border-radius: 2px;
+    padding: 10px;
+
+}
+
+nav>p:hover {
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+/* sidebar */
+.sidebar {
+    background-color: whitesmoke;
+    width: 350px;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: none;
+}
+
+.sidebar>p {
+    font-size: 14px;
+    font-weight: 800;
+    color: blue;
+    text-align: right;
+    padding: 10px;
+
+}
+
+.sidebar>p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.sidebarHeading>h3 {
+    font-size: 22px;
+    font-weight: 800;
+    padding: 10px 10px 20px 20px;
+}
+
+.sidebarHeading>p,
+.SidebarOption>p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 10px 10px 20px;
+    color: rgb(88, 88, 88);
+}
+
+.SidebarOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.SidebarOption>i {
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(88, 88, 88);
+    padding-right: 30px;
+}
