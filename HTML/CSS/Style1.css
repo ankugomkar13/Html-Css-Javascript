@@ -1,0 +1,75 @@
+body {
+    /* font-family: 'Roboto', sans-serif;
+    font-weight: 300; */
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
+}
+
+h1 {
+
+
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.header {
+    width: 50%;
+    height: 100vh;
+    border: 2px solid black;
+    /* background: linear-gradient(red,yellow,blue) */
+    /* background: linear-gradient(to bottom,yellow,red) */
+    background: radial-gradient(Blue, white);
+    border-radius: 50%;
+
+}
+
+.para1 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Unbounded', cursive;
+}
+
+.Mypara {
+    font-size: 1em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.grid-item1 {
+    border: 1px;
+}
+
+@media(max-width:780px) {
+    body {
+        background-color: blue;
+    }
+    .Ankita
+    {
+        background-color: brown;
+    }
+}
+@media(min-width:400px) and (max-width:780px)
+{
+    body 
+    {
+        background-color: rgb(255, 0, 34);    
+        
+    }
+    
+}
+@media(min-width:780px) and (max-width:1200px)
+{
+    body 
+    {
+        background-color: yellow;    
+        
+    }
+    #h1
+    {
+        font-size: 20px;
+    }
+}
+

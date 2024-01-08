@@ -1,0 +1,25 @@
+body{
+   
+    /* font-family: Arial, Helvetica, sans-serif; */
+    
+}
+#name
+{
+    background-color: brown;
+    margin-left: 10%;
+    padding-left: 300px;
+    border: 5px solid blue;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+#para1
+{
+    background-color: blueviolet;
+    
+}
+.Head
+{
+    background-color: brown;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    /* font-style: oblique; */
+}
+

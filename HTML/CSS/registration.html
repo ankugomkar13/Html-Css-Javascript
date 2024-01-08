@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+    <body bgcolor="#E4F0F8">
+        <font face="Brush Script MT" size="7" color="purple">
+        <center><b>Enter Login Details:</b></center>
+        </font>
+       <center> <form action="registration.html">
+        First Name(Minimum 6 characters)<font color="red">* </font>
+        <input type='text' id='firstname' /><br /><br />
+        Last Name<font color="red"><font color="red">* </font> </font> 
+        <input type='text' id='lastname' /><br /><br />
+        EmailAddress<font color="red">* </font>
+        <input type='text' id='email' /><br />
+        <font color="red">(one e-mail id only):</font> 
+        <font color="redblue">e.g. smith@hotmail.com</font><br /><br/>
+        Password(minimum 6 characters)<font color="red">* </font>
+        <input type='password' id='pass'><br /><br/>
+        Address<font color="red">* </font>
+        <textarea rows="2" cols="20" id='addr' /></textarea> <br /> <br/>
+        Mobile No<font color="red">* </font> 
+        <input type='text' id='mobileno' /><br />
+        Gender: <input type='radio' name="gender">male
+        <input type='radio' name="gender">female<br/><br />
+        <!-- <input type='Submit' value='submit' /> -->
+        <table align="center"><tr><td>
+            <button onClick="myFunction()"><a href="home.html" >Submit</a></button>
+          </a>
+            <script>
+              function myFunction() {
+                alert("account has been created Successfully");
+              }
+            </script></td>
+       <td align="center"> <input type='Reset' value='reset' /></td>
+    </table></tr>
+        </form></center>
+        </body>
+
+</html>
