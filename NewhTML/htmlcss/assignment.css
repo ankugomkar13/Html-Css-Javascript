@@ -1,0 +1,87 @@
+
+/* .Imgs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.lg{
+  width: 60px;
+  height: 20px;  
+}
+
+
+.hidden-btns {
+  display: none;
+}
+
+#Images-btn:focus+.hidden-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img:hover{
+    cursor: pointer;
+    position:sticky;
+    animation-duration: initial;
+    animation: alternate-reverse;
+    transform: scale(1.3);
+    transition-duration: 3s;
+  
+} 
+
+
+button{ 
+  width: 400px;
+  height: 40px;
+  margin: 7px;
+  background-color: rgb(176, 170, 170);
+  color: rgb(17, 16, 16);
+  cursor: pointer;
+}
+
+/* login form */
+
+.login-form {
+  display: none;
+  width: 300px;
+  margin-left: 40px;
+  padding: 20px;
+  background-color: #757474;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form input[type="submit"] {
+  width: 50%;
+  background-color: #4e554e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+
+  
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #525f73;
+}
+
+.show-form {
+  display: block; /* show the login form when the button is clicked */
+}

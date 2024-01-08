@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let array =[12,23,45,67,78,90];
+        // let array =["Anku","ankii","ranu"]
+        let obj = [
+            {
+                fname: "Ankita",
+                lname: "Gomkar",
+                id: 123
+            },
+            {
+                fname: "Anki",
+                lname: "Gom",
+                id: 1233
+            },
+            {
+                fname: "khushi",
+                lname: "Gom...",
+                id: 1223
+            },
+        ];
+
+        // *********forEach method************
+        
+        // const something = (num,i) => {
+        //     console.log("i--->", num.lname);
+        // };
+        // obj.forEach((num,i) => something(num,i));
+
+            obj.map((value,index) =>
+            {
+                console.log(index);
+                console.log(value);
+            });
+        
+
+       
+    </script>
+</body>
+
+</html>

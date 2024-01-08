@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload = "onload()">
+    <!-- <button onmouseover="mouseOver()" onmouseout="onmouseOut()">submit</button> -->
+
+    <!-- <input type="text"onmouseover="mouseOver()" onmouseout="onmouseOut()" > -->
+
+    <!-- <input type="text" onchange="onchange()"> -->
+
+    <button id="submit">submit</button>
+   
+    <!-- //onload after loading perform operation but we can not apply onload event on html element we can apply onload event on body tag -->
+    <script>
+        const  onload = () =>
+        {
+            console.log("Noting is impossible");
+        };
+        // const  mouseOver = () =>
+        // {
+        //     console.log("Success");
+        // };
+        // const onmouseOut = () =>
+        // {
+        //     console.log("IN future");
+        // };
+
+        
+    //mouseOver() ACTION perform when user moves the mouse to the html element 
+    //mouseOut() action perform when user moves the mouse away from html element
+
+    //onchage()  when we move control from one element to other at that time onchange event occure
+    // const  onchange = () =>
+    //     {
+    //         console.log("Noting");
+    //     };
+
+        // addEventListener programatic generate result per jab hum event operation nhi perform kar sakte use time pe 
+        // use karna addEventListener but we can not perform direct this event we have to store value int other varible 
+        // then after apply this event to that variable
+        
+        const submitbtn = document.getElementById("submit");
+        
+        // parameter event type and action code 
+        submitbtn.addEventListener("click", () => {
+            console.log("success");
+        });
+        
+
+    </script>
+</body>
+</html>

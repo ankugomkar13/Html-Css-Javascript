@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: black;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+
+            position: relative;
+            animation:animationFunction;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        .animation1
+        {
+            animation-timing-function: linear;
+        }
+        .animation2
+        {
+            animation-timing-function: ease;
+        }
+        .animation3
+        {
+            animation-timing-function: ease-in;
+        }
+        .animation4
+        {
+            animation-timing-function: ease-out;
+        }
+        .animation4
+        {
+            animation-timing-function: ease-in-out;
+        }
+
+
+        @keyframes animationFunction {
+            from{
+                left: 0;
+                transform: rotate(0deg);
+            }
+            to{
+                left: 300px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+<body>
+<body>
+    <div class="animation1">linear </div>
+    <div class="animation2">ease</div>
+    <div class="animation3">ease-in</div>
+    <div class="animation4">ease-out</div>
+    <div class="animation5"> ease-in-out</div>
+</body>
+</html>

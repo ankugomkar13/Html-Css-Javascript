@@ -1,0 +1,182 @@
+<!-- BOM browser Object Model  -->
+
+<!-- DOM  DOcument Object Model-->
+<!-- it repersent all page content a object that can be midify
+dom defines as standard for accessing document 
+when web is loaded the brower create a document object of the load page
+document ==html
+html ====head,body
+head === element title
+ -->
+<!-- method and properties of DOM -->
+
+<!-- html accessing method
+1.getElementById ......it return element
+2.getElementsByTagName(name) .....it return array
+3.getElementsByClassName(name) ,......it return array -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+     <!-- <div id = "MainDiv">
+       <h1 id = "H1tag">This is h1 </h1>
+       <h2 id = "H2tag">This is h2 </h2>
+       <button onclick="fuction()">Submit</button> -->
+        <!-- <p id="Ptag"> THis is P tag</p> -->
+       <!-- <p id="P2tag"> THis is P tag 2</p> -->
+
+       <!-- <h1 id ="ankita">this is I am</h1>
+       <p class="paf">This is you</p> -->
+       <!-- <button onclick="handleToggele()">Change</button> -->
+       <!-- <button onclick="handleChangeH1()">Change</button> -->
+        <!-- <button onclick=" SetAttribute()">Change</button> -->
+
+        <!-- <input type="text" name ="" id="Ankita">
+        <button onclick="changeAttribute()">Submit</button> -->
+
+        <ul id = "mylist">Coffee</ul>
+        <ul>tea</ul>
+        <ul>milk</ul>
+        <button onclick="something()">Update</button>
+      
+     </div>
+   
+    <script>
+
+        // <!-- // *********   selecting html element -->
+
+
+        // getElementById ......it return element
+
+        // const div = document.getElementById("MainDiv");
+        // const h1tag = document.getElementById("H1tag");
+        // const h2tag = document.getElementById("H2tag");
+        // const p1tag = document.getElementById("Ptag");
+        // const p2tag = document.getElementById("P2tag")
+        // console.log(div);
+        // console.log(h1tag);
+        // console.log(h2tag);
+        // console.log(p1tag);
+        // console.log(p2tag );
+   
+         // getElementsByTagName(name) .....it return array
+
+        // const p2tagname = document.getElementsByTagName("p");
+        // console.log(p2tagname);
+
+        //getElementsByClassName(name) ,......it return array -->
+
+        // const hclass = document.getElementsByClassName("ankita");
+        // const Pclass = document.getElementsByClassName("paf")
+
+        // console.log(hclass);
+        // console.log(Pclass);
+
+
+    //*********FInding html elemtn 
+
+//    const  handlechange = () =>
+//     {
+//         const divele = document.getElementById("H1tag")
+//         divele.style.color = "red";
+//     }; 
+
+// const  handlechange = () =>
+//     {
+//         const divele = document.getElementsByTagNameNS(h1);
+//         for (let i = 0; index < divele.length; i++) {
+//             divele[i].style.color = "red";
+//         }
+        
+//     }; 
+
+// const handleToggele = () =>
+// {
+//     const divele = document.getElementById("MainDiv");
+//     if((divele.style.display === "none"))
+//     {
+//         divele.style.display = "block";
+//     }
+//     else{
+//         divele.style.display = "none";
+//     }
+// };
+
+//innerHtml use to change containtent of element of html
+// const handleChangeH1 = () =>
+// {
+//     let h1tag = document.getElementById("ankita")
+//      h1tag.innerHTML = "SOmething";
+// };
+
+///attribute set karne new setAttribute(attributename , attributeproperty)
+
+// const  SetAttribute = () =>
+// {
+//          let h1tag = document.getElementById("ankita")
+//         h1tag.setAttribute("class","something")
+// };
+//  const changeAttribute = () =>
+//  {
+//     let inputext = document.getElementById("Ankita");
+//     inputext.type = "password";
+
+//  };
+
+//Adding and deleting element
+// createELement()  "Is to create ELement" ......
+// const fuction = () =>
+// {
+// const divele = document.getElementById("MainDiv")
+
+//cretae h3 element
+// const h3elev = document.createElement("h3");
+//create content for h3 element
+// const h3element = document.createTextNode("H3 Tag");
+
+//add content for h3 element 
+// h3elev.appendChild(h3element );
+
+//add element in the div element
+
+// MainDiv.appendChild(h3elev)
+
+// };
+
+// removeChild() "remove child"
+// const fuction = () =>
+// {
+// let divele = document.getElementById("MainDiv");
+// let h2ele = document.getElementById("H2tag")
+
+// divele.removeChild(h2ele);
+// };
+
+
+//replaceChild is use to replace child
+const something = () =>
+{
+    //select first child element
+    const element = document.getElementById("mylist");
+
+    //create a new text node
+    const newNode = document.createTextNode("Water")
+
+    //replace the text node 
+    element.replaceChild(newNode,element.childNodes[0]);
+};
+
+
+</script>
+ 
+</body>
+</html>
+

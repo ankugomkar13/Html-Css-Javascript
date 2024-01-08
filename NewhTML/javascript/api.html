@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // IMP 
+        // fetch method return promise if promise is successful then it execute then otherwise catch
+        // const url = 
+        // fetch("http://jsonplaceholder.typicode.com/posts")
+        //     .then((response) => console.log(response.json()))
+        //     .then((data) => {
+        //         console.log(data);
+        //         // data.forEach((element) => {
+        //         //     console.log(element);
+        //         // });
+        //     })
+        //     .catch((err) => console.log(err))
+
+        fetch("http://jsonplaceholder.typicode.com/posts")
+        // fetch(url).then((response) => response.json())
+        .then((response)=>response.json())
+        .then(async (data) => {
+        await console.log(await data);
+        
+        await data.forEach(async(element) => {
+           await console.log(element);
+        });
+    })
+        .catch((err) => console.log(err));
+    </script>
+</body>
+
+</html>

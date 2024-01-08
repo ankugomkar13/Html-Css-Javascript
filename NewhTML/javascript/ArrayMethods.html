@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  let fruits = new Array("kiwi","Apple","banana","mango");
+        // let array = ["Ankita","Khushi","Anki","Ranu"] ;
+        //******** convert string into array ***********
+         // const abc = fruits.toString();
+            // console.log(abc);
+
+
+        //********pop remove last index element
+        // const abc = fruits.pop();
+        // console.log(abc);
+        // console.log(fruits); 
+
+        //****** shift remove first index element ******
+
+        // const abc = fruits.shift();
+        // console.log(abc);
+        // console.log(fruits); 
+
+
+        //********** push method insert element at last ******
+
+        // const abc = fruits.push("Ankita");
+        // console.log(abc);
+        // console.log(fruits); 
+
+        //***********unshift method insert element at first index ******
+
+        // const abc = fruits.unshift("Ankita");
+        // console.log(abc);
+        // console.log(fruits); 
+
+        //not use delete keyword it through error
+        //*********** delete method use to delete any element at any index *******
+        
+        // const abc = delete fruits[1];
+        // console.log(abc);
+        // console.log(fruits);
+
+
+         //*********** splice method use to delete any element at any index *******
+        //first element index kaha se start karna hai 2nd element batata hai kaha tak range jayegi including jo index element diya hai wo bhi
+         
+        // fruits.splice(1,2);
+        //  console.log(fruits);
+
+
+        //************* splice method is also use to insert element *********8
+        // fruits.splice(2,0,"six","Ankita")
+        // console.log(fruits);
+
+        //***********concate() method use to join to array  it return new array ***********
+
+        // let fruits = new Array("kiwi","Apple","banana","mango");
+        // let array = ["Ankita","Khushi","Anki","Ranu"] ;
+        // let array1 = [1,2,3,4,5,6]
+    
+        // let newArray =fruits.concat(array ,array1,"Ankita");
+        // console.log(newArray);
+
+        //*************** sort() is use to sort array  order ******
+        
+        // let array = ["Ankita","Khushi","Anki","Ranu"] ;
+        // array.sort();
+        // console.log(array);
+
+        // ******for sorting number sort() method not apply for that we use function *****
+        // const array =[5,6,7,3,8,2,1];
+         
+        // array.sort(function (a,b) {
+        //     return a-b;
+        // });
+
+        // console.log(array);
+
+
+        //********slice() method exclude index number delete remaining element******
+        // const array =[5,6,7,3,8,2,1];
+
+        // const newArr = array.slice(2);
+        // console.log(array);
+        // console.log(newArr);
+
+        //******min max value find karne array se *******
+
+        // const array =[5,6,7,3,8,2,1];
+        // function myArrayMax(array)
+        // {
+        //     return Math.max.apply(null,array)
+        // }
+
+        // console.log( myArrayMax(array));
+
+        //************ sort object  ***********
+
+        // const car =[
+        //     {type:"Volvo" , year:2006 },
+        //     {type:"sabosa" , year:2001},
+        //     {type:"naruto" , year:2005},
+            
+        // ];
+        // car.sort(function (a,b) {
+            
+        //     // return a.year - b.year;
+        //     x=a.type.toLowerCase();
+        //     y=b.type.toUpperCase();
+        //     if(x < y)
+        //     {
+        //         return -1;
+        //     }
+        //     if(x > y)
+        //     {
+        //         return 1;
+        //     }
+        //     return 0;
+
+        // });
+        // console.log(car);
+
+
+        //********reverse() method use to reverse  
+        // const array =[5,6,7,3,8,2,1];
+        // array.sort();
+        // array.reverse();
+        // console.log(array);
+
+        // let array1 = ["Ankita","Khushi","Anki","Ranu"] ;
+        // array1.reverse();
+        // console.log(array1);
+
+        // car.reverse();
+        // console.log(car);
+
+        //********* filter() method use to filter specific condition but we have to give condition to filter *****
+        
+        // const array =[34,56,78,11,2,3,16,23];
+        // const over18 = array.filter(myfunction);
+        // function myfunction(value ,index)
+        // {
+        //     return value > 18;
+        // } 
+        // console.log(over18); 
+
+        //**********every() it check condition and return true and false 
+
+        // const array =[34,56,78,11,2,3,16,23];
+        // const over18 = array.every(myfunction);
+        // function myfunction(value ,index)
+        // {
+        //     return value > 18;
+        // } 
+        // console.log(over18); 
+
+        //*********some()......if ek bhi element condition 
+        // const array =[34,56,78,11,2,3,16,23];
+        // const over18 = array.some(myfunction);
+        // function myfunction(value ,index)
+        // {
+        //     return value > 18;
+        // } 
+        // console.log(over18); 
+
+        // //**********reduce() it return reduce value as per your condition
+        // const number = [34,67,78,90,12];
+
+        // let sum = number.reduce(myfunction);
+
+        // function myfunction(total,value,index)
+        // {
+        //     console.log("total",total);
+        //     console.log("value",value);
+        //     console.log("index",index);
+        //     console.log("================="); 
+        //     return total + value;
+        // }
+        // console.log("sum ===> ",sum);
+
+
+        //**********reduceRight() it return reduce value as per your condition
+        // const number = [34,67,78,90,12];
+
+        // let sum = number.reduceRight(myfunction);
+
+        // function myfunction(total,value,index)
+        // {
+        //     console.log("total",total);
+        //     console.log("value",value);
+        //     console.log("index",index);
+        //     console.log("================="); 
+        //     return total + value;
+        // }
+        // console.log("sum ===> ",sum);
+
+        // ******** indexof() method se jo bhi element pass karege uska index return karta hai **********
+        //if multiple apprance ho toh indexof() return index of first apprance
+        //lastIndexOf() return last apperance of index
+        // const number = [34,67,78,90,12];
+        // let position = number.indexOf(90);
+        // console.log(position);
+
+
+        // ******* find()  is use to return first element of an array which fulfil the condition
+        // const number = [13,67,78,90,12];
+        // // const array1 =[1,2,3,4,6,7]
+        // let element = number.find(myfunction);
+        // function myfunction(value ,index,array)
+        // {
+        //     return value > 18;
+        // } 
+        // console.log(element); 
+
+        //************findIndex()  it return the index of element first element of an array which fulfil the condition
+        // const number = [13,67,78,90,12];
+        // let element = number.findIndex(myfunction);
+        // function myfunction(value ,index,array)
+        // {
+        //     return value > 18;
+        // } 
+        // console.log(element); 
+
+        //****** includes() it return true or false if element present hoga array me toh true otherwise false
+        
+        // const fruits = ["banana","orange",'Apple'];
+        // const abc =fruits.includes("orange");
+        // console.log(abc);
+        
+        //spread operator [...] is use to join or connect to array
+
+        // const array1 = ["first","second","third"];
+        // const array2 = ["fourth","fifth"];
+        // const array3 = ["Sixth","seventh","Eight"];
+
+        // const newarray = [...array1,...array2,...array3];
+        // console.log(newarray);
+     </script>
+</body>
+</html>
+

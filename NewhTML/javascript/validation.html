@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center> <b>Enter Login Details:</b></center>
+	  <form name="" method="post" action="login">
+    <table align="center" width="100" height="150" cellspacing=”15”>
+      <tr>
+        <td><b>Login ID:</b></td>
+        <td><input type="text" name="t1" placeholder = "Username" id="ankita"></td>
+      </tr>
+      <tr>
+        <td><b>Password:</b></td>
+        <td><input type="password" name="t2" placeholder = "Password" id="gomkar"></td>
+      </tr>
+      <tr align="center">
+      	<td><a href ="registration">Registration</a></td>
+        <td><button handlelogin();>Login</button></td>
+     </tr>
+     </table>
+     </form>
+     <script>
+        const handlelogin = () =>
+        {
+            const uservalue = document.getElementById("ankita").value;
+            const password = document.getElementById("gomkar").value;
+            if(uservalue !=="" && password !=="")
+            {
+            if(uservalue == "")
+            {
+                document.getElementById("errUer").style.display = "block";
+            }
+            if(password == "")
+            {
+                document.getElementById("errpassword").style.display = "block";
+            }
+            }
+        }
+     </script>
+</body>
+</html>

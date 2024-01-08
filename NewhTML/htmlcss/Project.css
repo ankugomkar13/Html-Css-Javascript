@@ -1,0 +1,290 @@
+* {
+    background-color: rgb(222, 236, 236);
+}
+
+
+
+.mainDiv {
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+header {
+    background-color: white;
+    width: 1350px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+
+.fblogo {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 40px;
+    font-weight: 800;
+    background-color: rgb(18, 68, 196);
+    color: white;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.heaaderLeft>input {
+    background-color: white;
+    font-size: 30px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    width: 200px;
+
+    box-sizing: border-box;
+    background-image: url(./images/search.png);
+    background-position: 10px 10px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 40px;
+    transition: width 0.5s;
+
+}
+
+.heaaderLeft>input:focus {
+    width: 500px;
+}
+
+.heaaderLeft,
+.headerRight {
+    width: 750px;
+    background-color: rgb(222, 236, 236);
+
+}
+
+.heaaderLeft {
+    width: 700;
+}
+
+.headerRight {
+    width: 400;
+}
+
+.headerRight {
+    justify-content: space-evenly;
+    background-color: rgb(222, 236, 236);
+}
+
+.headerRight>p {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    padding: 7px 12px;
+    border-radius: 10px;
+    /* background-color: rgb(104, 159, 207); */
+}
+
+.headerRight>p:hover,
+.menurequest>p:hover,
+.menunotification>p:hover,
+.menumessage>p:hover
+{
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+.heaaderLeft,
+.headerRight,
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.projectBody {
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    padding-top: 5px;
+}
+
+
+
+.Sidebar {
+    background-color: white;
+    margin: 5px;
+    width: 600px;
+    border: 1px solid rgb(60, 8, 8);
+    border-radius: 5px;
+    padding: 10px;
+    position: sticky;
+    top: 65px;
+    height: 100%;
+}
+
+.Sidebar>p {
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgb(222, 236, 236);
+    margin: o;
+    padding: 5px;
+    color: rgb(134, 20, 20);
+
+}
+
+
+.SidebarBio>h4 {
+    font-size: 20px;
+    font-weight: 900;
+    color: red;
+    padding: 10px;
+    margin: 0;
+    margin-left: 30px;
+    background-color: rgb(39, 9, 145);
+
+}
+
+/* .SidebarBio>h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 20px;
+    color: palevioletred;
+    background-color: antiquewhite;
+} */
+
+.Registrationform {
+
+    background-color: rgb(222, 236, 236);
+    margin-top: 3px;
+    margin: 5px;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Registrationform>input[type=text],
+.Registrationform>input[type=email]
+
+/* .Registrationform>input[type=password] */
+    {
+    width: 550px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.password,
+.number {
+    background-color: white;
+}
+
+input[type=password],
+input[type=number],
+input[type=date] {
+    width: 270px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin-top: 6px;
+    margin-bottom: 7px;
+}
+
+.affiliations {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: baseline;
+}
+
+.affiliations>p {
+    width: 200px;
+    font-size: 25px;
+    font-weight: 800;
+    color: brown;
+    background-color: white;
+}
+
+.Radio {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.radioWidth {
+    width: 150px;
+    background-color: white;
+}
+
+.topradio,
+.bottomradio {
+    display: flex;
+    flex-direction: row;
+}
+.menurequest,.menumessage,.menunotification
+{
+    position: relative;
+}
+.incomingRequests
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+img{
+    width: 50px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.menurequest:hover>.incomingRequests
+{
+    display: block;
+}
+.incomingmessage
+{
+    display: none;
+    position: absolute;
+    border: 1px solid black;
+    background-color: burlywood;
+   
+}
+.menumessage:hover>.incomingmessage
+{
+    display: block;
+}
+.incomingnotification
+{
+    position: absolute;
+    display: none;
+    border: 1px solid black;
+    background-color: burlywood;
+}
+.menunotification:hover>.incomingnotification
+{
+    display: block;
+}
+
